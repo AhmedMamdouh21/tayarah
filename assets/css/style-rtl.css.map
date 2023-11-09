@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,4BAAI;AACZ,OAAO,CAAC,+BAAI;AACZ,OAAO,CAAC,4BAAI;AACZ,OAAO,CAAC,2BAAI;AAEZ,mBAAmB;AAKnB,gBAAgB;AAIhB,kBAAkB",
-    "sources": [
-        "style-rtl.scss"
-    ],
-    "names": [],
-    "file": "style-rtl.css"
-}

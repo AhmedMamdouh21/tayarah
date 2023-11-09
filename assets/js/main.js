@@ -129,6 +129,37 @@ if ($(".swiper-client-feedback").length) {
   });
 }
 
+function initSwiper(i) {
+  let swipeClientFeedback = new Swiper(".swiper-"+i+"", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    speed: 800,
+    // autoplay: {
+    //   disableOnInteraction: false,
+    //   delay: 5000,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.3,
+      },
+      768: {
+        slidesPerView: 1.6,
+      },
+      1024: {
+        slidesPerView: 1.8,
+      },
+    },
+    navigation: {
+      nextEl: ".client-feedback-"+i+" .swiper-button-next",
+      prevEl: ".client-feedback-"+i+" .swiper-button-prev",
+    },
+  });
+}
+
+$('.client-feedback').each(function(index){
+  initSwiper(index);
+});
 
 if ($(".marquee-swiper-clients-top").length) {
   let swiperMarqueeClientsTop = new Swiper(".marquee-swiper-clients-top", {
@@ -247,3 +278,12 @@ ScrollReveal().watch('.get-contact',
         el.classList.remove('active')
     }
 )
+
+
+if($('.dropdown-service').length) {
+  $(".dropdown-service .dropdown-toggle").next(".dropdown-menu").children().on("click",function(){
+    $('.dropdown-menu li').removeClass('active');
+    this.classList.add('active');
+    $(this).closest(".dropdown-menu").prev(".dropdown-service .dropdown-toggle").html('<span>' +  $(this).text() + '</span>');
+  });
+}

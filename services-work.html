@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tayarah</title>
+  <!-- <link
+    rel="shortcut icon"
+    href="assets/img/favicon.ico"
+    type="image/x-icon"
+    /> -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <!-- Start NavBar -->
+  <nav class="navbar navbar-expand-lg py-lg-3">
+    <div class="w-100 px-4 d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid" src="assets/img/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler p-0">
+        <!-- <i class="bi bi-list icon-open"></i>
+        <i class="bi bi-x-lg icon-close"></i> -->
+        <svg class="icon icon-tabler icon-tabler-menu-2 icon-open" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M4 6l16 0" />
+          <path d="M4 12l16 0" />
+          <path d="M4 18l16 0" />
+      </svg>
+      <svg class="icon icon-tabler icon-tabler-square-x icon-close" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+        <path d="M9 9l6 6m0 -6l-6 6" />
+      </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link scroll-btn active" data-scroll="hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="news-partnerships">News and Partnerships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="our-services">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="our-people">Our People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="client-feedback">Client Feedbacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-btn" data-scroll="our-clients">Our Clients</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="#" class="btn_main">
+            <span><span>Get Contact</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+  <!-- Start Hero -->
+  <section id="hero" class="hero">
+    <!-- Swiper -->
+    <div class="swiper hero-swiper h-100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide overflow-hidden d-flex align-items-center">
+          <div class="swiper-img">
+            <video class="img-fit" autoplay="true" loop="'true'" src="assets/videos/Jumia-Final-Song.mp4"
+              muted="'muted'" playsinline id="heroVideo" data-wf-ignore="true" data-object-fit="cover">
+              <source src="" type="video/mp4" data-wf-ignore="true" />
+            </video>
+          </div>
+          <div class="container-layout">
+            <div class="col-10">
+              <div class="logo mb-3">
+                <img class="img-fluid" src="assets/img/content.png" alt="logo">
+              </div>
+              <h2 class="xl-title fontBold">
+                Tayarah Content
+              </h2>
+              <p class="small-description mb-4 col-lg-7 col-10">
+                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever. Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
+              </p>
+              <!-- <button data-scroll="about" class="btn_main icon scroll-btn">
+                <span><span>Read More</span></span>
+
+              </button> -->
+
+              <div class="dropdown dropdown-service">
+                <a class="btn_main d-inline-flex align-items-center justify-content-between dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>Select Service</span>
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><button data-scroll="tayarah-originals" class="dropdown-item scroll-btn">Tayarah Originals</button></li>
+                  <li><button data-scroll="branded-content" class="dropdown-item scroll-btn">Branded Content</button></li>
+                  <li><button data-scroll="creative-coverage" class="dropdown-item scroll-btn">Creative Coverage</button></li>
+                  <li><button data-scroll="promotional" class="dropdown-item scroll-btn">Promotional</button></li>
+                  <li><button data-scroll="music-format" class="dropdown-item scroll-btn">Music Format</button></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slogan">
+        Get ready for the hipe
+      </div>
+      <div class="d-flex custom-controls align-items-center justify-content-between py-2 mb-4">
+        <div class="d-flex">
+          <div class="swiper-pagination d-flex align-items-center justify-content-center me-3"></div>
+        </div>
+        <ul class="social-media list-unstyled d-flex flex-column justify-content-center align-items-center mb-0">
+          <li class="my-2">
+            <a class="icon" href="http://" target="_blank">
+              <img src="assets/img/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="my-2">
+            <a class="icon" href="http://" target="_blank">
+              <img src="assets/img/instagram.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="my-2">
+            <a class="icon" href="http://" target="_blank">
+              <img src="assets/img/youtube.svg" alt="youtube">
+            </a>
+          </li>
+          <li class="my-2">
+            <a class="icon" href="http://" target="_blank">
+              <img src="assets/img/linkedin.svg" alt="linkedin">
+
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- Start Services -->
+  <section id="tayarah-originals" class="client-feedback client-feedback-0 py-section">
+    <div class="row mb-lg-4 mb-3">
+      <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-end">
+        <div class="swiper-button-prev custom-arrow"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto text-center px-lg-5">
+        <h2 class="large-title fontBold mb-3">
+          TAYARAH ORIGINALS
+        </h2>
+        <p class="small-description">
+          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+        </p>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+        <div class="swiper-button-prev custom-arrow d-lg-none d-block"></div>
+        <div class="swiper-button-next custom-arrow"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper swiper-0">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-1.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-2.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-3.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="branded-content" class="client-feedback client-feedback-1 py-section">
+    <div class="row mb-lg-4 mb-3">
+      <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-end">
+        <div class="swiper-button-prev custom-arrow"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto text-center px-lg-5">
+        <h2 class="large-title fontBold mb-3">
+          TAYARAH ORIGINALS
+        </h2>
+        <p class="small-description">
+          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+        </p>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+        <div class="swiper-button-prev custom-arrow d-lg-none d-block"></div>
+        <div class="swiper-button-next custom-arrow"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper swiper-1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-1.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-2.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-3.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="creative-coverage" class="client-feedback client-feedback-2 py-section">
+    <div class="row mb-lg-4 mb-3">
+      <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-end">
+        <div class="swiper-button-prev custom-arrow"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto text-center px-lg-5">
+        <h2 class="large-title fontBold mb-3">
+          TAYARAH ORIGINALS
+        </h2>
+        <p class="small-description">
+          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+        </p>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+        <div class="swiper-button-prev custom-arrow d-lg-none d-block"></div>
+        <div class="swiper-button-next custom-arrow"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper swiper-2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-1.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-2.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-3.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promotional" class="client-feedback client-feedback-3 py-section">
+    <div class="row mb-lg-4 mb-3">
+      <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-end">
+        <div class="swiper-button-prev custom-arrow"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto text-center px-lg-5">
+        <h2 class="large-title fontBold mb-3">
+          TAYARAH ORIGINALS
+        </h2>
+        <p class="small-description">
+          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+        </p>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+        <div class="swiper-button-prev custom-arrow d-lg-none d-block"></div>
+        <div class="swiper-button-next custom-arrow"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper swiper-3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-1.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-2.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-3.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="music-format" class="client-feedback client-feedback-4 py-section">
+    <div class="row mb-lg-4 mb-3">
+      <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-end">
+        <div class="swiper-button-prev custom-arrow"></div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto text-center px-lg-5">
+        <h2 class="large-title fontBold mb-3">
+          TAYARAH ORIGINALS
+        </h2>
+        <p class="small-description">
+          Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's
+        </p>
+      </div>
+      <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+        <div class="swiper-button-prev custom-arrow d-lg-none d-block"></div>
+        <div class="swiper-button-next custom-arrow"></div>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper swiper-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-1.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-2.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-client-feedback d-flex flex-column justify-content-center">
+            <img class="img-fit position-absolute" src="assets/img/client-feedback-3.png" alt="client-feedback">
+            <div class="position-relative mx-auto col-lg-8 col-10 text-center info">
+              <h3 class="medium-title fontMedium mb-2 title">
+                Coca-Cola Recipes
+              </h3>
+              <div class="description small-description">
+                "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et
+                Dolore Magna Aliqua. Ut Enim Ad Minim Veniam"
+              </div>
+              <a href="#" target="_blank" class="btn_main icon white mt-3">
+                <span><span>Play Video</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services -->
+
+
+
+
+  <!-- Start Get Contact -->
+  <section class="get-contact container-end py-section pb-lg-0">
+    <div class="top">
+      <div class="shape d-lg-block d-none">
+        <svg class="img-fit" viewBox="0 0 1311.143 605.454">
+          <g id="Group_194" data-name="Group 194" transform="translate(213.382 -7880.194)">
+            <path id="Path_693" data-name="Path 693" d="M2844.653,5388.149s-118.448,173.891-118.448,388.1l438.507-199.282V5350.347c-229.335,0-320.06,37.8-320.06,37.8" transform="translate(-2066.952 2591.743)" fill="#339bdb"/>
+            <path  class="line" id="Path_694" data-name="Path 694" d="M910.626,439.131c-22.969,58.962-68.169,148.287-141.907,150.43-17.8.517-36.129-5.85-48.273-18.875-13.09-14.039-17.852-34.3-16.75-53.46,1.273-22.143,8.791-44.839,18.386-64.724,12.1-25.074,26.786-49.145,45.1-70.192,15.782-18.142,38.363-41.09,62.54-47.235,11.428-2.9,22.186,3.454,21.892,16.046-.133,5.675-2.532,11.079-5.6,15.854-14.424,22.432-48.518,34.677-72.426,20.088-9.3-5.676-15.99-15.125-19.353-25.488-6.7-20.637-.693-42.687,7.292-62.018,33.241-80.469,103.344-141.227,126.171-226.73,2.886-10.808,4.806-22.34,1.739-33.1-5.419-19-26.076-30.376-45.074-29.4-17.916.921-34.474,11.246-45.821,25.14C785.1,51.924,781.907,71.405,773.258,90.03a120.814,120.814,0,0,1-30.292,40.575c-25.386,22.024-59.1,32.45-92.392,32.557-36.359.116-71.577-12.986-100.064-35.336-27.333-21.447-42.939-54.1-65.324-80.075-24.043-27.9-55.89-42.23-92.408-45.512-64.445-5.793-97.451-.3-195.645,15.934C127.808,29.636,55.112,49.34,19.891,60" transform="translate(-230.955 7888.057)" fill="none" stroke="#339bdb" stroke-width="16"/>
+          </g>
+        </svg>
+      </div>
+      <div class="col-lg-5 info">
+        <div class="logo">
+          <img class="img-fluid" src="assets/img/logo-white.svg" alt="logo">
+        </div>
+        <h2 class="fontBold medium-title my-4">
+          CONTACT US AND SEE HOW WE CAN HELP YOU ACHIEVE YOUR GOALS.
+        </h2>
+        <a href="#"  class="btn_main">
+          <span><span>Get Contact</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- End Get Contact -->
+
+  <!-- Start Footer -->
+  <footer class="container-layout">
+    <div class="row justify-content-between align-items-center mb-lg-0 mb-3">
+      <div class="col-lg-5">
+        <h2 class="large-title fontBold mb-lg-0 mb-3">
+          Let's Fly Together
+        </h2>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+          <ul class="list-unstyled p-0 m-0 list-info">
+            <li>
+              <a class="small-description" href="https://www.google.com/maps" target="_blank">
+                130 Youssef El-Sebai St., South Academy (G), 5th. settlement, New Cairo, Cairo, Egypt.
+              </a>
+            </li>
+            <li>
+              <a class="small-description" href="mailto:hello@tayarah.com">
+                hello@tayarah.com
+              </a>
+            </li>
+            <li>
+              <a class="small-description" href="tel:19323">
+                19323
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between flex-lg-row flex-wrap my-3">
+      <ul class="navbar-nav d-flex flex-row flex-wrap align-items-center my-3 list-unstyled p-0 mx-0">
+        <li class="nav-item">
+          <a class="nav-link scroll-btn active" data-scroll="hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="news-partnerships">News and Partnerships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="our-services">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="our-people">Our People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="client-feedback">Client Feedbacks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll-btn" data-scroll="our-clients">Our Clients</a>
+        </li>
+      </ul>
+      <ul class="social-media list-unstyled d-flex  justify-content-center align-items-center my-3">
+        <li class="ms-lg-3 me-3">
+          <a class="icon" href="http://" target="_blank">
+            <img src="assets/img/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li class="ms-lg-3 me-3">
+          <a class="icon" href="http://" target="_blank">
+            <img src="assets/img/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li class="ms-lg-3 me-3">
+          <a class="icon" href="http://" target="_blank">
+            <img src="assets/img/youtube.svg" alt="youtube">
+          </a>
+        </li>
+        <li class="ms-lg-3 me-3">
+          <a class="icon" href="http://" target="_blank">
+            <img src="assets/img/linkedin.svg" alt="linkedin">
+
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright small-description d-flex justify-content-between align-items-center">
+      <div>
+        © 2023 TAYARAH, ALL RIGHTS RESERVED.
+      </div>
+      <a class="privacy" href="#">
+        Privacy Policy
+      </a>
+    </div>
+  </footer>
+  <!-- Start Footer -->
+
+
+
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/scrollreveal.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
