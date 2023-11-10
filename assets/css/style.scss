@@ -1225,11 +1225,15 @@ body {
 
 /*** Footer ***/
 footer {
-    @media (min-width: 992px) {
-        margin-top: -60px !important;
-        position: relative;
-        z-index: 9;
+    position: relative;
+    &:not(.footer-contact) {
+        @media (min-width: 992px) {
+            margin-top: -60px !important;
+            position: relative;
+            z-index: 9;
+        }
     }
+
     .list-info {
         li {
             &:not(:last-child) {
@@ -1316,6 +1320,78 @@ footer {
             }
         }
     }
+
+    /* Scroll To Top */
+    .backToTop {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        position: absolute;
+        z-index: 9999;
+        cursor: pointer;
+        transform: rotate(90deg);
+        
+        @media (min-width: 992px) {
+            top: -10rem;
+            right: 0px;
+        }
+
+        @media (max-width: 991.98px) {
+            bottom: 3rem;
+            right: 1rem;
+        }
+    }
+}
+
+
+/*** Contact ***/
+
+.contact-wrap {
+    min-height: 100vh;
+    .contact {
+        .list-info {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 0.5rem;
+                }
+                a {
+                    color: rgba($color: $white, $alpha: 0.5);
+                    transition: $transitionFast;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    
+    
+        .social-media {
+            li {
+                .icon {
+                    opacity: 0.5;
+                    transition: $transitionFast;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact-shape {
+        position: absolute;
+        bottom: -10rem;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        transform: scaleX(-1);
+        pointer-events: none;
+    }
+    
+    
+    .footer-contact {
+        overflow: hidden;
+    }
 }
 
 
@@ -1323,6 +1399,24 @@ footer {
 .dropdown-service {
     .dropdown-toggle {
         width: 200px;
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+        }
+        &::after {
+            border: none;
+            background-image: url('../img/icon-arrow-down.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 22px;
+            height: 22px;
+            transition: $transitionFast;
+        }
+        &.show {
+            &::after {
+                transform: scaleY(-1);
+            }
+        }
     }
     .dropdown-menu {
         border: 1px solid #EFBE5E;
@@ -1356,4 +1450,35 @@ footer {
             }
         }
     }
+}
+
+
+/*** Form ***/
+
+.form-floating {
+    .form-control {
+        background-color: transparent;
+        border-color: rgba($color: $white, $alpha: 0.4);
+        border-radius: 28px;
+        box-shadow: none;
+        outline: 0;
+        color: $white;
+        @extend .small-description;
+        padding: 1rem 1.5rem;
+    }
+    > label {
+        color: rgba($color: $white, $alpha: 0.4);
+        left: 1.25rem;
+         @extend .small-description;
+    }
+
+    textarea {
+        height: 140px !important;
+        resize: none;
+        overflow-y: auto;
+    }
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    opacity: 1;
 }

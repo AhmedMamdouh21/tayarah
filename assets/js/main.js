@@ -12,7 +12,7 @@ $(".navbar .navbar-toggler").on("click", function () {
 
 if ($(".hero").length) {
   let swiperHero = new Swiper(".hero-swiper", {
-    loop: true,
+    // loop: true,
     effect: "fade",
     fadeEffect: {
       crossFade: true,
@@ -30,16 +30,40 @@ if ($(".hero").length) {
 }
 
   if ($(".scroll-btn")) {
-    $(".scroll-btn").on("click", function () {
-      $("html, body").animate(
-        {
-          scrollTop:
-            $("#" + $(this).data("scroll")).offset().top + "px",
-        },
-        1200
-      );
+    $(".scroll-btn").on("click", function (e) {
+      var url = '/';
+      var hash = "#section-"+ $(this).data("scroll") +"";
+
+      if($("#" + $(this).data("scroll")).length) {
+        window.location.hash = hash;
+        $("html, body").animate(
+          {
+            scrollTop:
+              $("#" + $(this).data("scroll")).offset().top,
+          },
+          1200
+        );
+      } else {
+        window.location.href  = url + hash;
+      }
     });
   }
+
+  // Scroll to with hash
+  
+  var getHash = window.location.hash;
+  
+  var dataScroll = getHash.replace('section-', '');
+  console.log("dataScroll", dataScroll);
+  setTimeout(() => {
+    $("html, body").animate(
+      {
+        scrollTop:
+        $(dataScroll).offset().top,
+      },
+      1200
+    );
+  }, 100);
 
 if ($("select").length) {
   $("select").selectpicker();
@@ -129,7 +153,7 @@ if ($(".swiper-client-feedback").length) {
   });
 }
 
-function initSwiper(i) {
+function initSwiperServices(i) {
   let swipeClientFeedback = new Swiper(".swiper-"+i+"", {
     spaceBetween: 0,
     centeredSlides: true,
@@ -157,9 +181,12 @@ function initSwiper(i) {
   });
 }
 
-$('.client-feedback').each(function(index){
-  initSwiper(index);
-});
+
+if($('.services-work').length) {
+  $('.client-feedback').each(function(index){
+    initSwiperServices(index);
+  });
+}
 
 if ($(".marquee-swiper-clients-top").length) {
   let swiperMarqueeClientsTop = new Swiper(".marquee-swiper-clients-top", {
