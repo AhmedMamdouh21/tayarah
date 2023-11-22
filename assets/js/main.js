@@ -5,7 +5,7 @@ const navBarHeight = $(".navbar-fixed").innerHeight();
 
 $(".navbar .navbar-toggler").on("click", function () {
     $("body").toggleClass("open-menu");
-    console.log("navBarHeight", navBarHeight);
+    // console.log("navBarHeight", navBarHeight);
 });
 
 
@@ -31,6 +31,7 @@ if ($(".hero").length) {
 
   if ($(".scroll-btn")) {
     $(".scroll-btn").on("click", function (e) {
+      $("body").removeClass("open-menu");
       var url = '/';
       var hash = "#section-"+ $(this).data("scroll") +"";
 
@@ -54,7 +55,7 @@ if ($(".hero").length) {
   var getHash = window.location.hash;
   
   var dataScroll = getHash.replace('section-', '');
-  console.log("dataScroll", dataScroll);
+  // console.log("dataScroll", dataScroll);
   setTimeout(() => {
     $("html, body").animate(
       {
@@ -111,7 +112,6 @@ if ($(".swiper-services-info").length) {
 
 if ($(".marquee-swiper").length) {
   let swiperMarquee = new Swiper(".marquee-swiper", {
-    spaceBetween: 0,
     centeredSlides: true,
     speed: 20000,
     autoplay: {
@@ -121,6 +121,14 @@ if ($(".marquee-swiper").length) {
     slidesPerView: "auto",
     allowTouchMove: false,
     disableOnInteraction: true,
+    breakpoints: {
+      0: {
+        spaceBetween: 20,
+      },
+      768: {
+        spaceBetween: 30,
+      },
+    },
   });
 }
 

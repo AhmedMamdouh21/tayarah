@@ -122,6 +122,8 @@ body {
     }
 
     &.open-menu {
+        height: 100vh !important;
+        overflow: hidden;
         .navbar {
             .navbar-collapse {
                 @media (max-width: 991.98px) {
@@ -179,7 +181,7 @@ body {
     width: 90%;
     margin: auto;
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
         width: 100%;
         padding: 0 15px;
     }
@@ -189,7 +191,7 @@ body {
     width: 95%;
     margin-left: auto;
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
         width: 100%;
         padding: 0 15px;
     }
@@ -199,7 +201,7 @@ body {
     width: 95%;
     margin-right: auto;
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
         width: 100%;
         padding: 0 15px;
     }
@@ -207,10 +209,10 @@ body {
 
 
 .container-samll {
-    width: 60%;
+    width: 80%;
     margin: auto;
 
-    @media (max-width: 575.98px) {
+    @media (max-width: 991.98px) {
         width: 100%;
         padding: 0 15px;
     }
@@ -883,11 +885,12 @@ body {
         align-items: center;
     }
     .title-body {
-        line-height: 1.8;
+        line-height: 2;
         @media (min-width: 992px) {
             position: absolute;
-            left: 15px;
+            left: 15%;
             width: 100%;
+            margin-top: 1.5rem;
         }
     }
     .shape {
@@ -904,10 +907,14 @@ body {
         // svg {
         //     width: 100%;
         // }
+        position: relative;
+        width: 101%;
+        left: -1%;
         .line {
             stroke-dasharray: 3000;
             stroke-dashoffset: 3000;
         }
+        
 
        
     }
@@ -936,7 +943,7 @@ body {
         .card-news-partnerships {
             position: relative;
             @media (min-width: 576px) {
-                height: 80vh;
+                height: 90vh;
                 padding: 2rem;
             }
             @media (max-width: 575.98px) {
@@ -993,6 +1000,10 @@ body {
           stroke-width: 15;
         }
     }
+
+    .text-align {
+        text-align: center;
+    }
 }
 
 
@@ -1007,7 +1018,7 @@ body {
                 padding: 3rem 0;
             }
             @media (max-width: 575.98px) {
-                height: 80vh;
+                height: 90vh;
                 padding: 1.5rem 0 calc(3rem + 45px);
             }
             &::before {
@@ -1066,6 +1077,27 @@ body {
             width: auto;
             position: relative;
             overflow: hidden;
+
+            &.main-title {
+                text-transform: none;
+                @media (min-width: 1600px) {
+                    font-size: 90px;
+                }
+            
+                @media (min-width: 1200px) and (max-width: 1599.98px) {
+                    font-size: 80px;
+                }
+            
+            
+                @media (min-width: 576px) and (max-width: 1199.98px) {
+                    font-size: 70px;
+                }
+            
+            
+                @media (max-width: 575.98px) {
+                    font-size: 40px;
+                }
+            }
         }
     }
 
@@ -1146,11 +1178,24 @@ body {
             }
         }
     }
+
+    .swiper-button-next.custom-arrow, .swiper-button-prev.custom-arrow{
+        min-width: 45px;
+        min-height: 45px;
+    }
 }
 
 
 /*** Our Clients ***/
 .our-clients {
+    .marquee-swiper-clients-top {
+        margin-bottom: 2.5rem !important;
+        margin-top: 2.5rem !important;
+    }
+    .marquee-swiper-clients-bottom {
+        margin-bottom: 2.5rem !important;
+        margin-top: 2.5rem !important;
+    }
     .swiper-wrapper {
         transition-timing-function: linear !important;
         position: relative;
@@ -1164,7 +1209,7 @@ body {
 
             .img {
                 filter: grayscale(1);
-                opacity: 0.5;
+                opacity: 0.7;
                 transition: $transitionFast;
 
                 &:hover {
@@ -1190,6 +1235,7 @@ body {
                 left: 0;
                 transform: translateY(-50%);
                 padding-left: 5%;
+                padding-top: 2.5rem;
             }
         }
     }
@@ -1323,14 +1369,18 @@ footer {
 
     /* Scroll To Top */
     .backToTop {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         position: absolute;
         z-index: 9999;
         cursor: pointer;
         transform: rotate(90deg);
         
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         @media (min-width: 992px) {
             top: -10rem;
             right: 0px;
@@ -1349,6 +1399,9 @@ footer {
 .contact-wrap {
     min-height: 100vh;
     .contact {
+        @media (min-width: 992px) {
+            width: 80%;
+        }
         .list-info {
             li {
                 &:not(:last-child) {
@@ -1398,7 +1451,7 @@ footer {
 // Services
 .dropdown-service {
     .dropdown-toggle {
-        width: 200px;
+        width: 230px;
         &:focus {
             box-shadow: none;
             outline: 0;
